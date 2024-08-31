@@ -15,10 +15,10 @@ print(list(map(lambda x, y: x == y, first, second)))
 
 def get_advanced_writer(file_name):
     def write_everything(*data_set):
-        with open(file_name, 'w', encoding='utf-8') as file:
+        with open(file_name, 'w', encoding='utf-8') as text:
             for data_write in data_set:
-                file.write(str(data_write) + '\n')
-        file.close()
+                text.write(str(data_write) + '\n')
+        text.close()
     return write_everything
 
 
